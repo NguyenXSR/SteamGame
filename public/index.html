@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Valve Shopping Game</title>
+    <link rel="stylesheet" href="./App.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <section class="logo">
+          <a href="https://store.steampowered.com/">
+            <img
+              src="https://store.cloudflare.steamstatic.com/public/shared/images/header/logo_steam.svg?t=962016"
+              alt="Steam Logo"
+            />
+          </a>
+        </section>
+
+        <section class="navigator">
+          <nav class="nav-bar">
+            <a href="https://store.steampowered.com/">Store</a>
+            <a href="https://steamcommunity.com/">Community</a>
+            <a href="https://store.steampowered.com/about/">About</a>
+            <a href="https://help.steampowered.com/en/">Support</a>
+          </nav>
+        </section>
+
+        <section class="login-menu">
+          <a class="vertical-line" href="#">Login</a>
+          <a href="#">Language</a>
+        </section>
+      </div>
+
+      <div class="banner">
+        <img id="banner-img" src="" />
+      </div>
+      <div class="body">
+        <div class="side-bar">
+          <div class="search-area">
+            <label for="search-game">Search for your game:</label>
+            <div class="search-bar">
+              <input type="text" id="search-for-game" placeholder=" " />
+              <button class="search-btn">💻</button>
+            </div>
+          </div>
+          <div class="category">
+            <p class="genres">Browse by Genres:</p>
+            <ul class="genres-list">
+              <li>Free to Play</li>
+              <li>Early Access</li>
+              <li>Action</li>
+              <li>Adventure</li>
+              <li>Casual</li>
+              <li>Indie</li>
+              <li>Massively Multiplayer</li>
+              <li>Racing</li>
+              <li>RPG</li>
+              <li>Simulation</li>
+              <li>Sports</li>
+              <li>Strategy</li>
+            </ul>
+            <!-- <button class="more-genres">Press for More</button> -->
+          </div>
+        </div>
+
+        <div class="collection">
+          <h3>Search result:</h3>
+          <div class="game-result">
+            <!-- <div class="game-card"> -->
+            <div class="game-banner">
+              <!-- <img src=""> -->
+            </div>
+            <div class="game-infor">
+              <div class="game-name"></div>
+              <div class="game-price"></div>
+            </div>
+            <!-- </div> -->
+          </div>
+          <div class="btn-group">
+            <button class="btn btn-previous">Back</button>
+            <span class="display-page">1</span>
+            <button class="btn btn-next">Next</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

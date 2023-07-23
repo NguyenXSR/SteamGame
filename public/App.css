@@ -1,0 +1,266 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  font-family: "Rockwell", sans-serif;
+  margin: 0;
+  background-color: #2a475e;
+  width: 100%;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #171a21;
+}
+
+.logo img {
+  height: 50px;
+  background-color: rgb(48, 156, 53);
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 60%;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 60%;
+}
+
+.nav-bar a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: #b8b6b4;
+  font-weight: bold;
+}
+.nav-bar a:hover {
+  filter: brightness(130%);
+}
+
+.login-menu a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: rgb(178, 178, 178);
+  cursor: pointer;
+}
+
+.vertical-line {
+  border-right: 1px solid #333;
+  padding-right: 20px;
+}
+
+.banner img {
+  margin-top: 0.5rem;
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
+/* Body styles */
+.body {
+  display: flex;
+  margin-top: 20px;
+}
+
+.side-bar {
+  flex-basis: 25%;
+  margin-right: 70px;
+}
+
+.search-area label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.search-bar {
+  display: flex;
+  box-shadow: 3px 0px 9px 4px rgba(0, 0, 0, 0.14);
+}
+
+.search-bar input[type="text"] {
+  flex-grow: 1;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.search-btn {
+  padding: 6px;
+  background-color: rgb(80, 80, 85);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.category {
+  margin-top: 20px;
+}
+
+.genres {
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.genres-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color: #b8b6b4;
+  height: 100%;
+}
+
+.genres-list li {
+  margin-bottom: 10px;
+  padding: 5px 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+  filter: brightness(140%);
+}
+
+.genres-list li:hover {
+  background-color: #b6c9d4f6;
+  text-align: center;
+  text-transform: lowercase;
+  filter: brightness(110%);
+  cursor: pointer;
+  font-weight: bold;
+  color: #e58638;
+}
+
+.collection {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 75%;
+  filter: brightness(110%);
+}
+.game-result {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.game-card {
+  border: none;
+  /* display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; */
+  margin-bottom: 2rem;
+  width: 250px;
+  -webkit-box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.48);
+  box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.48);
+  transition: opacity 0.5s ease-in-out;
+}
+
+.game-card:hover {
+  filter: brightness(110%);
+  cursor: pointer;
+}
+
+.game-infor {
+  display: flex;
+  text-align: center;
+  background-color: #66c0f4;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -3px;
+  height: 50px;
+  width: 250px;
+  padding: 0px 7px;
+}
+
+.game-name {
+  font-weight: bold;
+}
+
+.game-price {
+  font-weight: bold;
+  color: #f60;
+  font-size: 13px;
+}
+
+.btn-group {
+  display: flex;
+  justify-content: space-between;
+}
+.display-page {
+  margin-top: 3rem;
+  color: white;
+  font-size: 1.3rem;
+}
+.btn {
+  width: 70px;
+  height: 30px;
+  border-radius: 10px;
+  background-color: #f60;
+  cursor: pointer;
+  color: rgb(255, 241, 241);
+  border: none;
+  margin-top: 3rem;
+}
+.btn:hover {
+  filter: brightness(110%);
+}
+
+.showing-game {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  height: auto;
+  justify-content: space-between;
+}
+.game-informations p {
+  color: rgba(64, 121, 153, 1);
+}
+.game-description {
+  color: #b8b6b4;
+}
+.title {
+  font-size: 25px;
+  margin-bottom: 10px;
+  color: #f3f3f3;
+  text-transform: uppercase;
+}
+.price {
+  margin-bottom: 5px;
+  color: rgb(77, 140, 177);
+  filter: brightness(130%);
+}
+
+.img-detail img {
+  width: 100%;
+}
+.game-details {
+  border: none;
+  background: rgba(21, 30, 42, 0.6);
+  padding: 0.7rem 1.5rem;
+  font-size: 15px;
+  font-family: "Dosis", sans-serif;
+}
+
+@media (max-width: 1550px) {
+  .header {
+    padding: 15px 3%;
+    transition: 0.2s;
+  }
+  .nav-bar {
+    padding: 0 3%;
+    transition: 0.2s;
+  }
+  #banner-img {
+    padding: 15px 3%;
+    transition: 0.2s;
+  }
+}
